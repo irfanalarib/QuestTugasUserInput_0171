@@ -125,6 +125,11 @@ fun FormBiodataScreen(modifier: Modifier){
                     modifier = Modifier.fillMaxWidth(),
                     singleLine = true
                 )
+
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ){}
             }
         }
     }
