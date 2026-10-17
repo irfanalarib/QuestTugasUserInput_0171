@@ -206,6 +206,7 @@ fun FormBiodataScreen(modifier: Modifier){
                         Text(text = stringResource(id = R.string.skill_web), fontSize = 11.sp)
                     }
                 }
+                Spacer(modifier = Modifier.height(4.dp))
             }
         }
     }
