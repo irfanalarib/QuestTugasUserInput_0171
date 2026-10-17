@@ -27,6 +27,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
@@ -169,7 +170,14 @@ fun FormBiodataScreen(modifier: Modifier){
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.Start
-                ) {}
+                ) {
+                    Text(
+                        text = stringResource(id = R.string.label_pilih_skill),
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 13.sp,
+                        color = Color.Black
+                    )
+                }
             }
         }
     }
