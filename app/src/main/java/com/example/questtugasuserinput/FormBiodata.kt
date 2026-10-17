@@ -15,6 +15,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material.icons.filled.DateRange
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
@@ -207,6 +209,37 @@ fun FormBiodataScreen(modifier: Modifier){
                     }
                 }
                 Spacer(modifier = Modifier.height(4.dp))
+
+                Button(
+                    onClick = {
+                        submittedNamaDepan = textNamaDepan
+                        submittedNamaBelakang = textNamaBelakang
+                        submittedEmail = textEmail
+                        submittedTglLahir = textTglLahir
+                        submittedExperience = textExperience
+
+                        val listSkill = mutableListOf<String>()
+                        if (textAndroidChecked) listSkill.add("Android")
+                        if (textUiUxChecked) listSkill.add("UI/UX")
+                        if (textWebChecked) listSkill.add("Web")
+                        submittedSkills = listSkill.joinToString(", ")
+                    },
+                    shape = RoundedCornerShape(12.dp),
+                    enabled = textNamaDepan.isNotEmpty() && textEmail.isNotEmpty(),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = colorResource(id = R.color.purple_title),
+                        contentColor = Color.White
+                    ),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(48.dp)
+                ) {
+                    Text(
+                        text = stringResource(id = R.string.btn_proceed),
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 15.sp
+                    )
+                }
             }
         }
     }
