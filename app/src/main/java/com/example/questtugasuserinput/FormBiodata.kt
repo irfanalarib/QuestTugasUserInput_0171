@@ -15,4 +15,8 @@ fun FormBiodataScreen(modifier: Modifier){
     var textEmail by remember { mutableStateOf("") }
     var textTglLahir by remember { mutableStateOf("") }
     var textExperience by remember { mutableStateOf("") }
+
+    var textAndroidChecked by remember { mutableStateOf(false) }
+    var textUiUxChecked by remember { mutableStateOf(false) }
+    var textWebChecked by remember { mutableStateOf(false) }
 }
