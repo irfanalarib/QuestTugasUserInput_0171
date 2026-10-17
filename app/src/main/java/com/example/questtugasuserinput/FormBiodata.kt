@@ -1,5 +1,7 @@
 package com.example.questtugasuserinput
 
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -26,4 +28,8 @@ fun FormBiodataScreen(modifier: Modifier){
     var submittedTglLahir by remember { mutableStateOf("") }
     var submittedExperience by remember { mutableStateOf("") }
     var submittedSkills by remember { mutableStateOf("") }
+
+    Box(
+        modifier = modifier.fillMaxSize()
+    ) {}
 }
