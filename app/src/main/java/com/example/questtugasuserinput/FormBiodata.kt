@@ -20,6 +20,7 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
+import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
@@ -239,6 +240,27 @@ fun FormBiodataScreen(modifier: Modifier){
                         fontWeight = FontWeight.Bold,
                         fontSize = 15.sp
                     )
+                }
+                if (submittedNamaDepan.isNotEmpty()) {
+                    ElevatedCard(
+                        elevation = CardDefaults.cardElevation(defaultElevation = 6.dp),
+                        colors = CardDefaults.cardColors(containerColor = Color.Black),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(110.dp)
+                    ) {
+                        Column(
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .padding(8.dp),
+                            verticalArrangement = Arrangement.Center
+                        ) {
+                            Text(text = "Nama: $submittedNamaDepan $submittedNamaBelakang", color = Color.White, fontSize = 12.sp)
+                            Text(text = "Email: $submittedEmail", color = Color.White, fontSize = 12.sp)
+                            Text(text = "Tgl Lahir: $submittedTglLahir | Exp: $submittedExperience", color = Color.White, fontSize = 12.sp)
+                            Text(text = "Skill: $submittedSkills", color = Color.White, fontSize = 12.sp)
+                        }
+                    }
                 }
             }
         }
