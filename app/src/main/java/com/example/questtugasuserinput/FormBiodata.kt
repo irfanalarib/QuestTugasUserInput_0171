@@ -108,6 +108,14 @@ fun FormBiodataScreen(modifier: Modifier){
                         modifier = Modifier.weight(1f),
                         singleLine = true
                     )
+                    OutlinedTextField(
+                        value = textNamaBelakang,
+                        onValueChange = { textNamaBelakang = it },
+                        label = { Text(stringResource(id = R.string.hint_nama_belakang), fontSize = 13.sp) },
+                        shape = RoundedCornerShape(12.dp),
+                        modifier = Modifier.weight(1f),
+                        singleLine = true
+                    )
                 }
             }
         }
