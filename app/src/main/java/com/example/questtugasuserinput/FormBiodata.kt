@@ -65,7 +65,7 @@ fun FormBiodataScreen(modifier: Modifier){
         modifier = modifier.fillMaxSize()
     ) {
         Image(
-            painter = painterResource(id = R.drawable.graybackground),
+            painter = painterResource(id = R.drawable.gedungumy),
             contentDescription = null,
             contentScale = ContentScale.Crop,
             modifier = Modifier
