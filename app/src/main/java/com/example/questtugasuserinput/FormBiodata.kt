@@ -165,6 +165,11 @@ fun FormBiodataScreen(modifier: Modifier){
                 }
 
                 Spacer(modifier = Modifier.height(2.dp))
+
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.Start
+                ) {}
             }
         }
     }
