@@ -117,6 +117,14 @@ fun FormBiodataScreen(modifier: Modifier){
                         singleLine = true
                     )
                 }
+                OutlinedTextField(
+                    value = textEmail,
+                    onValueChange = { textEmail = it },
+                    label = { Text(stringResource(id = R.string.hint_email), fontSize = 13.sp) },
+                    shape = RoundedCornerShape(12.dp),
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = true
+                )
             }
         }
     }
