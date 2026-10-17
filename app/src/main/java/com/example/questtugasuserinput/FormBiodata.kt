@@ -19,4 +19,11 @@ fun FormBiodataScreen(modifier: Modifier){
     var textAndroidChecked by remember { mutableStateOf(false) }
     var textUiUxChecked by remember { mutableStateOf(false) }
     var textWebChecked by remember { mutableStateOf(false) }
+
+    var submittedNamaDepan by remember { mutableStateOf("") }
+    var submittedNamaBelakang by remember { mutableStateOf("") }
+    var submittedEmail by remember { mutableStateOf("") }
+    var submittedTglLahir by remember { mutableStateOf("") }
+    var submittedExperience by remember { mutableStateOf("") }
+    var submittedSkills by remember { mutableStateOf("") }
 }
