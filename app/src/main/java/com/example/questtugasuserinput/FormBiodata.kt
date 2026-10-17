@@ -84,6 +84,12 @@ fun FormBiodataScreen(modifier: Modifier){
                     fontWeight = FontWeight.Bold,
                     color = colorResource(id = R.color.purple_title)
                 )
+
+                Text(
+                    text = stringResource(id = R.string.form_subtitle),
+                    fontSize = 12.sp,
+                    color = colorResource(id = R.color.text_subtitle)
+                )
             }
         }
     }
