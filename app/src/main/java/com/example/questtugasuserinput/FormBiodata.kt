@@ -163,6 +163,8 @@ fun FormBiodataScreen(modifier: Modifier){
                         }
                     )
                 }
+
+                Spacer(modifier = Modifier.height(2.dp))
             }
         }
     }
